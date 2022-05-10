@@ -7,11 +7,14 @@ num_value = [0]
 for sequence in get_val:
     num_value.append(int(sequence))
 
-while int(get_val) > 0:
+limiter = 0
+
+while limiter < 6:
     incr_val = num_value[0] + num_value[1]
     print(incr_val)
     up_val = incr_val + num_value[0]
     print(up_val)
     num_value = [up_val]
     num_value.append(int(incr_val))
+    limiter = limiter +1
 
