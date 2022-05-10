@@ -17,7 +17,7 @@
 
 # could use index values for pulling int values from an input("Enter a number to check if it's happy or sad: ")
 
-given_value = input("give a number")
+given_value = input("Enter any number, to check if it's happy or sad: ")
 num_value = []
 for new_func in given_value:
     num_value.append(int(new_func))
@@ -27,7 +27,7 @@ new_list = []
 while int(given_value) > 0:
     new_value = pow(num_value[0], 2) + pow(num_value[1], 2)
     if new_value in new_list:
-        print(f"{given_value} is a sad number")
+        print(f"Sorry! {given_value} is a sad number")
         break
     elif new_value > 1:
         num_value = []
@@ -35,7 +35,7 @@ while int(given_value) > 0:
         for ints in str(new_value):
             num_value.append(int(ints))
     elif new_value == 1:
-        print(f"{given_value} is a happy number!")
+        print(f"Great! {given_value} is a happy number!")
         break
     else:
         break
